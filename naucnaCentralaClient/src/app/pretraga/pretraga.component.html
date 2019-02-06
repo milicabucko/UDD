@@ -1,55 +1,21 @@
-<mat-toolbar color="black">
-  <mat-toolbar-row>
-    <span>Naucna centrala</span>
-    <span class="example-spacer"></span>
-    <button mat-button>Logout </button>
-  </mat-toolbar-row>
-  </mat-toolbar>
-Pretrazi po nazivu magazina <br>
-<mat-form-field class="example-full-width">
-  <input matInput placeholder="Unesite rec" value="">
-</mat-form-field>
-<button mat-button>PRETRAZI</button>
+<form>
+  <h4></h4>
+  <mat-form-field>
+    <mat-select placeholder="Pretrazi po" [(ngModel)]="selectedValue1" name="tip">
+      <mat-option *ngFor="let tip of tipovi" [value]="tip.value">
+        {{tip.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+  <mat-form-field>
+    <mat-select placeholder="Vrsta pretrage" [(ngModel)]="selectedValue2" name="vrsta">
+      <mat-option *ngFor="let vrsta of vrste" [value]="vrsta.value">
+        {{vrsta.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-button routerLink="/upload">Upload new file</button>
 
- <br>
-Pretrazi po naslovu rada <br>
- <mat-form-field class="example-full-width">
-  <input matInput placeholder="Unesite rec" value="">
-</mat-form-field>
-<button mat-button>PRETRAZI</button>
+</form>
 
-<br>
-Pretrazi po autoru  <br>
-<mat-form-field class="example-full-width">
-  <input matInput placeholder="Unesite rec" value="">
-</mat-form-field>
-<button mat-button>PRETRAZI</button>
-
-<br>
-Pretrazi po kljucnim pojmovima  <br>
-<mat-form-field class="example-full-width">
-  <input matInput placeholder="Unesite rec" value="">
-</mat-form-field>
-<button mat-button>PRETRAZI</button>
-
-
-<br>
-Pretrazi po naucnoj oblasti <br>
-<mat-form-field class="example-full-width">
-  <input matInput placeholder="Unesite rec" value="">
-</mat-form-field>
-<button mat-button>PRETRAZI</button>
-
-<br>
-Pretrazi po koautorima  <br>
-<mat-form-field class="example-full-width">
-  <input matInput placeholder="Unesite rec" value="">
-</mat-form-field>
-<button mat-button>PRETRAZI</button>
-
-<br>
-Pretrazi po recezentima  <br>
-<mat-form-field class="example-full-width">
-  <input matInput placeholder="Unesite rec" value="">
-</mat-form-field>
-<button mat-button>PRETRAZI</button>

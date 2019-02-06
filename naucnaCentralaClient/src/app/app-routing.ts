@@ -6,6 +6,7 @@ import { IzdanjaMagazinaComponent } from './izdanja-magazina/izdanja-magazina.co
 import { HomepagecitalacComponent } from './homepagecitalac/homepagecitalac.component';
 import { NaucniRadoviComponent } from './naucni-radovi/naucni-radovi.component';
 import { PretragaComponent } from './pretraga/pretraga.component';
+import { UploadComponent } from './upload/upload.component';
 
 const routes: Routes = [
     { path: '', redirectTo:'/login', pathMatch:'full'},
@@ -14,7 +15,8 @@ const routes: Routes = [
     { path: 'izdanjaMagazina/:magazinId', component: IzdanjaMagazinaComponent},
     { path: 'homePageCitalac', component: HomepagecitalacComponent},
     { path: 'listaRadova/:izdanjeId', component: NaucniRadoviComponent},
-    { path: 'pretraga', component: PretragaComponent}
+    { path: 'pretraga', component: PretragaComponent},
+    { path: 'upload', component: UploadComponent}
 
 ];
 

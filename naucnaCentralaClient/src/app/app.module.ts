@@ -32,6 +32,7 @@ import { HomepagecitalacComponent, PlatiClanarinuHomepageDialog } from './homepa
 import { PosaljiRadComponent } from './posalji-rad/posalji-rad.component';
 import { NaucniRadoviComponent, NaucniRadoviDialog } from './naucni-radovi/naucni-radovi.component';
 import { PretragaComponent } from './pretraga/pretraga.component';
+import { UploadComponent } from './upload/upload.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { PretragaComponent } from './pretraga/pretraga.component';
     NaucniRadoviDialog,
     PlatiClanarinuHomepageDialog,
     PlatiClanarinuAutorDialog,
-    PretragaComponent
+    PretragaComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,
