@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.sep.naucnacentrala.elasticsearch.NaucniRadESDTO;
+import org.springframework.web.multipart.MultipartFile;
 
 public interface ElasticSearchService {
 
@@ -12,4 +13,6 @@ public interface ElasticSearchService {
 	List<NaucniRadESDTO> searchByMultipleOptionalFields(Map<String, Object> json);
 	List<NaucniRadESDTO> searchByMoreLikeThis(String similarText);
 	List<NaucniRadESDTO> searchByGeoPoint(Long longitude, Long latitude);
+
+	NaucniRadESDTO uploadEBook(MultipartFile file);
 }
